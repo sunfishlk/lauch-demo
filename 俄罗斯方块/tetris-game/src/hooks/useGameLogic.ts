@@ -23,7 +23,7 @@ export const useGameLogic = () => {
     isPaused: true,
   });
 
-  const gameLoopRef = useRef<number>();
+  const gameLoopRef = useRef<number>(0);
 
   const spawnNewPiece = useCallback(() => {
     const newPiece = getRandomTetromino();
